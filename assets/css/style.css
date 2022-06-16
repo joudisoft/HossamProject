@@ -476,9 +476,10 @@ footer {
 .view-services:hover {
   opacity: 1;
 }
-footer .ftr-copyright {
+.ftr-copyright {
   background: #101010;
   color: white;
+  padding:1rem 0;
 }
 /* End Footer Section */
 
@@ -488,7 +489,9 @@ footer .ftr-copyright {
   border-radius: 0 !important;    
   border: 1px solid #333;
   background-color: #222;
-
+}
+.about-social{
+  margin-top: 11px !important;
 }
 .about-facebook:hover {
   background-color: #1877f2;
