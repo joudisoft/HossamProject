@@ -28,7 +28,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background:var(--lightColor);
+  background: var(--lightColor);
 }
 a {
   text-decoration: none;
@@ -93,49 +93,48 @@ footer {
 
 /* Start side bar section */
 
-.side-bar{
+.side-bar {
   background: var(--secondaryColor);
   width: 100%;
   overflow: hidden;
 }
-.side-bar-head{
+.side-bar-head {
   color: var(--mainColor) !important;
   background-color: #fff;
   justify-content: space-between;
-  padding:1rem 0.25rem
+  padding: 1rem 0.25rem;
 }
-.side-close{
+.side-close {
   display: flex;
-  justify-content:end;
+  justify-content: end;
 }
-.side-bar-content{
+.side-bar-content {
   padding: 0;
   overflow: hidden;
-
 }
-.side-links{
-  height:100%;
+.side-links {
+  height: 100%;
 }
-.side-item{
+.side-item {
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   text-align: center;
-  flex-basis:5%;
+  flex-basis: 5%;
 }
-.side-item a{
+.side-item a {
   transition: var(--trans);
-  display:inline-block;
+  display: inline-block;
   width: 100%;
-  padding:8px;
+  padding: 8px;
   user-select: none;
 }
-.side-item a:hover{
+.side-item a:hover {
   background-color: var(--mainColor);
   color: var(--secondaryColor) !important;
   filter: blur(0.5px);
-  transform:scale(1.5);
+  transform: scale(1.5);
   font-weight: bold;
 }
 /* End side bar section */
@@ -154,7 +153,7 @@ footer {
   border: solid 2px var(--mainColor);
   border-radius: 50%;
   transition: var(--trans);
-  z-index:10
+  z-index: 10;
 }
 .toUp-Show {
   bottom: 20px;
@@ -246,6 +245,7 @@ footer {
   width: 100%;
   height: 4px;
   transition: var(--trans);
+  background: white !important;
 }
 .menu-icon span:first-child {
   top: 0;
@@ -342,6 +342,20 @@ footer {
 }
 
 /* Start services section */
+
+.services-icons {
+  width: 100px;
+  height: 100px;
+  background: var(--mainColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  outline: var(--mainColor) solid;
+  outline-offset: 3px;
+  font-size:3rem !important;
+}
 .services-head {
   position: relative;
   margin-bottom: 40px;
@@ -355,20 +369,10 @@ footer {
   transform: translateX(-50%);
   position: absolute;
 }
-.services-footer{
+.services-footer {
   position: relative;
 }
-.services-footer::after{
-width: 200%;
-border:2px var(--secondaryColor) dashed;
-/* outline:2px var(--secondaryColor) dashed; */
-position: absolute;
-bottom:-20px;
-left:50%;
-transform: translateX(-50%);
-
-}
-/* End  services section */
+/* End services section */
 
 /* Start our vision section */
 .our-vision-head {
@@ -399,24 +403,24 @@ transform: translateX(-50%);
 .news-slide .carousel-indicators {
   bottom: -40px;
 }
-.news-slide .carousel-indicators button{
+.news-slide .carousel-indicators button {
   width: 10px;
   height: 10px;
-  border:none;
-  border-radius:50%;
-  background:var(--secondaryColor);
+  border: none;
+  border-radius: 50%;
+  background: var(--secondaryColor);
 }
 .news-slide .carousel-caption {
   position: relative;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   width: 80%;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
-} 
+  align-items: center;
+  justify-content: center;
+}
 /* End news section */
 
 /* End main section */
@@ -478,19 +482,19 @@ footer {
 }
 .ftr-copyright {
   background: #101010;
-  color: white;
-  padding:1rem 0;
+  padding: 1rem 0;
+  color: whitesmoke;
 }
 /* End Footer Section */
 
 /* Start social icon section */
-.ftr-social{
-  color:whitesmoke;
-  border-radius: 0 !important;    
+.ftr-social {
+  color: whitesmoke;
+  border-radius: 0 !important;
   border: 1px solid #333;
   background-color: #222;
 }
-.about-social{
+.about-social {
   margin-top: 11px !important;
 }
 .about-facebook:hover {
@@ -507,24 +511,28 @@ footer {
 }
 /* End social icon section */
 
-.fa-homeR {
-  width: 100px;
-  height: 100px;
-  background: var(--mainColor);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  outline: var(--mainColor) solid;
-  outline-offset: 3px;
-}
-
 @media (max-width: 575px) {
   .header-slide .carousel-item {
     height: calc(50vh - 80px);
     min-height: 450px;
   }
+  .our-vision-head {
+    max-width: fit-content;
+    padding-left: 2.5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .our-vision-content {
+    padding: 3rem;
+  }
+  .carousel-control-next {
+    right: 3px;
+    display:none;
+}
+.carousel-control-prev {
+  left: 3px;
+  display:none;
+}
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   .header-slide .carousel-item {
