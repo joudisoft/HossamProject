@@ -198,7 +198,7 @@ footer {
   transition: var(--trans);
 }
 .nav-links .nav-item a {
-  padding: 100% 10px;
+  padding: 100% 6px;
   text-transform: uppercase;
 }
 .nav-links .nav-item::before,
