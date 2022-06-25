@@ -511,6 +511,14 @@ footer {
 }
 /* End social icon section */
 
+/* Start media query */
+@media (max-width: 479px){
+  h1 span{
+    display: inline-block;
+    font-size: 1rem;
+    padding:5px 0;
+  }
+}
 @media (max-width: 575px) {
   .header-slide .carousel-item {
     height: calc(50vh - 80px);
@@ -546,3 +554,4 @@ footer {
     min-height: 500px;
   }
 }
+/* End media query */
